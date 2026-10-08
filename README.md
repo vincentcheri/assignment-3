@@ -33,4 +33,4 @@ docker run --rm devops-tool system-info
 
 ## CI failure demonstration
 
-The workflow has three ordered jobs: `validate`, `test`, and `docker`. To demonstrate failure handling, push a temporary syntax error on a branch and confirm `validate` fails; then fix it and push again. The final workflow run should pass all three jobs.
+The workflow has three ordered jobs: `validate`, `test`, and `docker`. On branch `ci-failure-demo`, commit `f0f6fb8` introduced a temporary syntax error and CI failed (run `37793864495`). Commit `5149070` fixed it; run `37794033697` passed all three jobs.

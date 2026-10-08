@@ -1,0 +1,5 @@
+services:
+  app:
+    build: .
+    image: devops-tool
+    command: ["help"]
